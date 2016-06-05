@@ -1,0 +1,20 @@
+﻿<Window x:Class="Ogloszenia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="114*"/>
+            <ColumnDefinition Width="403*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Aby pobrac dane ze strony kliknij w  przycisk&#xD;&#xA;Następnie poczekaj aż wyświetli się napis&#xD;&#xA;&quot;Pobrałem&quot;. Może potrwać do 14 minut." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="62" Grid.ColumnSpan="2"/>
+        <Button x:Name="Przycisk" Content="Pobierz ogłoszenia  i zapisz do plików" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Width="246" Click="Button_Click" Height="59" Grid.ColumnSpan="2" MouseMove="Przycisk_MouseMove" MouseLeave="Przycisk_MouseLeave"/>
+        <Label x:Name="LabelWynik" Content="" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Width="246" RenderTransformOrigin="0.737,-2.755" Grid.ColumnSpan="2" Height="61"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="13,86,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Aby pobrać dane z gumtree, kliknij w &#xD;&#xA;poniższyy przycisk. Nastepnie poczekaj&#xD;&#xA;aż wyświetli się odpowiedni napis. (Min) " Grid.Column="1" HorizontalAlignment="Left" Margin="176,10,0,0" VerticalAlignment="Top" Height="62"/>
+        <Button x:Name="PrzyciskGumtree" Content="Pobierz z gumtree" Grid.Column="1" HorizontalAlignment="Left" Margin="176,77,0,0" VerticalAlignment="Top" Width="208" Height="59" Click="Button_Click_1"/>
+        <Label x:Name="Label2Wynik" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="176,141,0,0" VerticalAlignment="Top" Width="208" Height="61"/>
+        <Label x:Name="LabelInfo1" Content="" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="63" Width="246"/>
+
+    </Grid>
+</Window>
